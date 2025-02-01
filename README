@@ -1,0 +1,24 @@
+# My Rotator Project
+
+## Overview
+Welcome to My Rotator Project! This project aims to develop a versatile antenna rotator system for precise control of antennas, improving signal reception and transmission. Please note that this project is still a **work in progress**.
+
+## Features
+Automate tracking via a server RTLCTL
+Test feature
+**Work in progress*
+
+## Installation
+To get started with the project, follow these steps:
+
+**Clone the Repository**
+
+ git clone https://github.com/NicolasGagne/Rotator.git
+ cd Rotator
+
+pip install -r requirements.txt
+python main.py
+
+
+
+Feel free to modify and expand this as needed to fit your specific project details. If you need any additional sections or information, let me know!
