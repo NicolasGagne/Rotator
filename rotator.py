@@ -24,8 +24,8 @@ class Rotator():
         self.motorStepPerTurn = 200
         self.precisionLimite = 360 / (self.motorStepPerTurn * 16)  # '1/16step': A cycle = 200 * 16 steps
         print('Precision Limit: ', self.precisionLimite, " degrees")
-        #self.Motor1 = HR8825(dir_pin=13, step_pin=19, enable_pin=12, mode_pins=(16, 17, 20))
-        #self.Motor2 = HR8825(dir_pin=24, step_pin=18, enable_pin=4, mode_pins=(21, 22, 27))
+        self.Motor1 = HR8825(dir_pin=13, step_pin=19, enable_pin=12, mode_pins=(16, 17, 20))
+        self.Motor2 = HR8825(dir_pin=24, step_pin=18, enable_pin=4, mode_pins=(21, 22, 27))
 
 
     def readServerData(self, data):
@@ -74,7 +74,7 @@ class Rotator():
         """
         while not stop_event.is_set():
 
-            time.sleep(1)  # simulate movement
+            time.sleep(.5)  # Slowing the code for the motors
             self.resetRotatorPosition()  # Reset to zero if rotator is back to 0.0
             # Calculate delta both
             """

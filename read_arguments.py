@@ -54,6 +54,5 @@ def read_arguments(args):
     TCP_PORT = args.port
     BUFFER_SIZE = args.buffer
 
-    print(args.test_mode)
 
     return TCP_IP, TCP_PORT, BUFFER_SIZE, args.test_mode

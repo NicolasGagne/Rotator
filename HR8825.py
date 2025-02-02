@@ -1,5 +1,17 @@
-import gpiozero as GPIO
 import time
+import gpiozero as GPIO
+"""
+To allow for developpement on any computer we use MockFactory() for testing
+"""
+try:
+    with open('/proc/cpuinfo', 'r') as cpuinfo:
+        for line in cpuinfo:
+            if line.startswith('Revision'):
+                print('Running on a Raspberry Pi!!')
+except FileNotFoundError:
+    from gpiozero.pins.mock import MockFactory
+    GPIO.Device.pin_factory = MockFactory()
+    print('Simulate GPIO for dev...')
 
 MotorDir = [
     'forward',
