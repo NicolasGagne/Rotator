@@ -1,5 +1,8 @@
 # My Rotator Project
 
+***IMPORTANT***
+Du to some hardware issue I am no longer updating this project check for similar project using arduino on my github
+
 ## Overview
 Welcome to My Rotator Project! This project aims to develop a versatile antenna rotator system for precise control of antennas, improving signal reception and transmission. Please note that this project is still a **work in progress**.
 
